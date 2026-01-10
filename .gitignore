@@ -1,0 +1,61 @@
+# ===============================
+# STM32 / Embedded Projects
+# ===============================
+
+# Build output
+Debug/
+Release/
+build/
+out/
+
+# IDE files
+.settings/
+.project
+.cproject
+.vscode/
+.idea/
+
+# STM32CubeIDE
+*.launch
+*.mxproject
+*.ioc.bak
+
+# Object files
+*.o
+*.elf
+*.map
+*.lst
+*.hex
+*.bin
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# ===============================
+# CMSIS / HAL unwanted content
+# ===============================
+
+# CMSIS DSP examples (VERY LARGE)
+Drivers/CMSIS/DSP/Examples/
+
+# CMSIS documentation
+Drivers/CMSIS/Documentation/
+
+# Cube generated backups
+**/Backup*/
+
+# ===============================
+# Temporary files
+# ===============================
+*.tmp
+*.swp
+*~
+
+# ===============================
+# Python / misc (if any)
+# ===============================
+__pycache__/
