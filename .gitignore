@@ -17,7 +17,7 @@ out/
 
 # STM32CubeIDE
 *.launch
-*.mxproject
+#*.mxproject
 *.ioc.bak
 
 # Object files
