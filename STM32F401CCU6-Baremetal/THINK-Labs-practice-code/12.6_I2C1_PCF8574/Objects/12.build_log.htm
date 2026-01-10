@@ -1,0 +1,1679 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Rajib Hasan, THINK, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.39.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.21
+Assembler:       Armasm.exe V6.21
+Linker/Locator:  ArmLink.exe V6.21
+Library Manager: ArmAr.exe V6.21
+Hex Converter:   FromElf.exe V6.21
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.9.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+E:\STM32\STM32 Black Pill-STM32F401CCU6\Code\1.0 STM32F4xx UCCUX code\12.6_I2C1_PCF8574\12.6_I2C1_PCF8574.uvprojx
+Project File Date:  02/17/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.21', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'STM32F4'
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(68): warning: declaration shadows a variable in the global scope [-Wshadow]
+   68 |   NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                                          */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(68): note: previous declaration is here
+   68 |   NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                                          */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(68): error: redefinition of enumerator 'NonMaskableInt_IRQn'
+   68 |   NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                                          */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(68): note: previous definition is here
+   68 |   NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                                          */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(69): warning: declaration shadows a variable in the global scope [-Wshadow]
+   69 |   MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M4 Memory Management Interrupt                           */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(69): note: previous declaration is here
+   69 |   MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M4 Memory Management Interrupt                           */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(69): error: redefinition of enumerator 'MemoryManagement_IRQn'
+   69 |   MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M4 Memory Management Interrupt                           */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(69): note: previous definition is here
+   69 |   MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M4 Memory Management Interrupt                           */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(70): warning: declaration shadows a variable in the global scope [-Wshadow]
+   70 |   BusFault_IRQn               = -11,    /*!< 5 Cortex-M4 Bus Fault Interrupt                                   */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(70): note: previous declaration is here
+   70 |   BusFault_IRQn               = -11,    /*!< 5 Cortex-M4 Bus Fault Interrupt                                   */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(70): error: redefinition of enumerator 'BusFault_IRQn'
+   70 |   BusFault_IRQn               = -11,    /*!< 5 Cortex-M4 Bus Fault Interrupt                                   */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(70): note: previous definition is here
+   70 |   BusFault_IRQn               = -11,    /*!< 5 Cortex-M4 Bus Fault Interrupt                                   */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(71): warning: declaration shadows a variable in the global scope [-Wshadow]
+   71 |   UsageFault_IRQn             = -10,    /*!< 6 Cortex-M4 Usage Fault Interrupt                                 */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(71): note: previous declaration is here
+   71 |   UsageFault_IRQn             = -10,    /*!< 6 Cortex-M4 Usage Fault Interrupt                                 */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(71): error: redefinition of enumerator 'UsageFault_IRQn'
+   71 |   UsageFault_IRQn             = -10,    /*!< 6 Cortex-M4 Usage Fault Interrupt                                 */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(71): note: previous definition is here
+   71 |   UsageFault_IRQn             = -10,    /*!< 6 Cortex-M4 Usage Fault Interrupt                                 */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(72): warning: declaration shadows a variable in the global scope [-Wshadow]
+   72 |   SVCall_IRQn                 = -5,     /*!< 11 Cortex-M4 SV Call Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(72): note: previous declaration is here
+   72 |   SVCall_IRQn                 = -5,     /*!< 11 Cortex-M4 SV Call Interrupt                                    */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(72): error: redefinition of enumerator 'SVCall_IRQn'
+   72 |   SVCall_IRQn                 = -5,     /*!< 11 Cortex-M4 SV Call Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(72): note: previous definition is here
+   72 |   SVCall_IRQn                 = -5,     /*!< 11 Cortex-M4 SV Call Interrupt                                    */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(73): warning: declaration shadows a variable in the global scope [-Wshadow]
+   73 |   DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M4 Debug Monitor Interrupt                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(73): note: previous declaration is here
+   73 |   DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M4 Debug Monitor Interrupt                              */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(73): error: redefinition of enumerator 'DebugMonitor_IRQn'
+   73 |   DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M4 Debug Monitor Interrupt                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(73): note: previous definition is here
+   73 |   DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M4 Debug Monitor Interrupt                              */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(74): warning: declaration shadows a variable in the global scope [-Wshadow]
+   74 |   PendSV_IRQn                 = -2,     /*!< 14 Cortex-M4 Pend SV Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(74): note: previous declaration is here
+   74 |   PendSV_IRQn                 = -2,     /*!< 14 Cortex-M4 Pend SV Interrupt                                    */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(74): error: redefinition of enumerator 'PendSV_IRQn'
+   74 |   PendSV_IRQn                 = -2,     /*!< 14 Cortex-M4 Pend SV Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(74): note: previous definition is here
+   74 |   PendSV_IRQn                 = -2,     /*!< 14 Cortex-M4 Pend SV Interrupt                                    */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(75): warning: declaration shadows a variable in the global scope [-Wshadow]
+   75 |   SysTick_IRQn                = -1,     /*!< 15 Cortex-M4 System Tick Interrupt                                */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(75): note: previous declaration is here
+   75 |   SysTick_IRQn                = -1,     /*!< 15 Cortex-M4 System Tick Interrupt                                */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(75): error: redefinition of enumerator 'SysTick_IRQn'
+   75 |   SysTick_IRQn                = -1,     /*!< 15 Cortex-M4 System Tick Interrupt                                */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(75): note: previous definition is here
+   75 |   SysTick_IRQn                = -1,     /*!< 15 Cortex-M4 System Tick Interrupt                                */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(77): warning: declaration shadows a variable in the global scope [-Wshadow]
+   77 |   WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                                         */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(77): note: previous declaration is here
+   77 |   WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                                         */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(77): error: redefinition of enumerator 'WWDG_IRQn'
+   77 |   WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                                         */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(77): note: previous definition is here
+   77 |   WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                                         */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(78): warning: declaration shadows a variable in the global scope [-Wshadow]
+   78 |   PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt                         */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(78): note: previous declaration is here
+   78 |   PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt                         */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(78): error: redefinition of enumerator 'PVD_IRQn'
+   78 |   PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt                         */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(78): note: previous definition is here
+   78 |   PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt                         */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(79): warning: declaration shadows a variable in the global scope [-Wshadow]
+   79 |   TAMP_STAMP_IRQn             = 2,      /*!< Tamper and TimeStamp interrupts through the EXTI line             */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(79): note: previous declaration is here
+   79 |   TAMP_STAMP_IRQn             = 2,      /*!< Tamper and TimeStamp interrupts through the EXTI line             */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(79): error: redefinition of enumerator 'TAMP_STAMP_IRQn'
+   79 |   TAMP_STAMP_IRQn             = 2,      /*!< Tamper and TimeStamp interrupts through the EXTI line             */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(79): note: previous definition is here
+   79 |   TAMP_STAMP_IRQn             = 2,      /*!< Tamper and TimeStamp interrupts through the EXTI line             */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(80): warning: declaration shadows a variable in the global scope [-Wshadow]
+   80 |   RTC_WKUP_IRQn               = 3,      /*!< RTC Wakeup interrupt through the EXTI line                        */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(80): note: previous declaration is here
+   80 |   RTC_WKUP_IRQn               = 3,      /*!< RTC Wakeup interrupt through the EXTI line                        */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(80): error: redefinition of enumerator 'RTC_WKUP_IRQn'
+   80 |   RTC_WKUP_IRQn               = 3,      /*!< RTC Wakeup interrupt through the EXTI line                        */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(80): note: previous definition is here
+   80 |   RTC_WKUP_IRQn               = 3,      /*!< RTC Wakeup interrupt through the EXTI line                        */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(81): warning: declaration shadows a variable in the global scope [-Wshadow]
+   81 |   FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                                            */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(81): note: previous declaration is here
+   81 |   FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                                            */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(81): error: redefinition of enumerator 'FLASH_IRQn'
+   81 |   FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                                            */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(81): note: previous definition is here
+   81 |   FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                                            */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(82): warning: declaration shadows a variable in the global scope [-Wshadow]
+   82 |   RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(82): note: previous declaration is here
+   82 |   RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                              */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(82): error: redefinition of enumerator 'RCC_IRQn'
+   82 |   RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(82): note: previous definition is here
+   82 |   RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                              */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(83): warning: declaration shadows a variable in the global scope [-Wshadow]
+   83 |   EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(83): note: previous declaration is here
+   83 |   EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                              */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(83): error: redefinition of enumerator 'EXTI0_IRQn'
+   83 |   EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(83): note: previous definition is here
+   83 |   EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                              */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(84): warning: declaration shadows a variable in the global scope [-Wshadow]
+   84 |   EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(84): note: previous declaration is here
+   84 |   EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                              */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(84): error: redefinition of enumerator 'EXTI1_IRQn'
+   84 |   EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(84): note: previous definition is here
+   84 |   EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                              */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(85): warning: declaration shadows a variable in the global scope [-Wshadow]
+   85 |   EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(85): note: previous declaration is here
+   85 |   EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                              */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(85): error: redefinition of enumerator 'EXTI2_IRQn'
+   85 |   EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(85): note: previous definition is here
+   85 |   EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                              */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(86): warning: declaration shadows a variable in the global scope [-Wshadow]
+   86 |   EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(86): note: previous declaration is here
+   86 |   EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                              */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(86): error: redefinition of enumerator 'EXTI3_IRQn'
+   86 |   EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(86): note: previous definition is here
+   86 |   EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                              */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(87): warning: declaration shadows a variable in the global scope [-Wshadow]
+   87 |   EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(87): note: previous declaration is here
+   87 |   EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                              */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(87): error: redefinition of enumerator 'EXTI4_IRQn'
+   87 |   EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(87): note: previous definition is here
+   87 |   EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                              */
+      |   ^
+main.c(9): warning: In file included from...
+.//library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(88): warning: declaration shadows a variable in the global scope [-Wshadow]
+   88 |   DMA1_Stream0_IRQn           = 11,     /*!< DMA1 Stream 0 global Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(88): note: previous declaration is here
+   88 |   DMA1_Stream0_IRQn           = 11,     /*!< DMA1 Stream 0 global Interrupt                                    */
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 warnings and 20 errors generated.
+compiling main.c...
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(68): warning: declaration shadows a variable in the global scope [-Wshadow]
+   68 |   NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                                          */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(68): note: previous declaration is here
+   68 |   NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                                          */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(68): error: redefinition of enumerator 'NonMaskableInt_IRQn'
+   68 |   NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                                          */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(68): note: previous definition is here
+   68 |   NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                                          */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(69): warning: declaration shadows a variable in the global scope [-Wshadow]
+   69 |   MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M4 Memory Management Interrupt                           */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(69): note: previous declaration is here
+   69 |   MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M4 Memory Management Interrupt                           */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(69): error: redefinition of enumerator 'MemoryManagement_IRQn'
+   69 |   MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M4 Memory Management Interrupt                           */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(69): note: previous definition is here
+   69 |   MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M4 Memory Management Interrupt                           */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(70): warning: declaration shadows a variable in the global scope [-Wshadow]
+   70 |   BusFault_IRQn               = -11,    /*!< 5 Cortex-M4 Bus Fault Interrupt                                   */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(70): note: previous declaration is here
+   70 |   BusFault_IRQn               = -11,    /*!< 5 Cortex-M4 Bus Fault Interrupt                                   */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(70): error: redefinition of enumerator 'BusFault_IRQn'
+   70 |   BusFault_IRQn               = -11,    /*!< 5 Cortex-M4 Bus Fault Interrupt                                   */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(70): note: previous definition is here
+   70 |   BusFault_IRQn               = -11,    /*!< 5 Cortex-M4 Bus Fault Interrupt                                   */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(71): warning: declaration shadows a variable in the global scope [-Wshadow]
+   71 |   UsageFault_IRQn             = -10,    /*!< 6 Cortex-M4 Usage Fault Interrupt                                 */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(71): note: previous declaration is here
+   71 |   UsageFault_IRQn             = -10,    /*!< 6 Cortex-M4 Usage Fault Interrupt                                 */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(71): error: redefinition of enumerator 'UsageFault_IRQn'
+   71 |   UsageFault_IRQn             = -10,    /*!< 6 Cortex-M4 Usage Fault Interrupt                                 */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(71): note: previous definition is here
+   71 |   UsageFault_IRQn             = -10,    /*!< 6 Cortex-M4 Usage Fault Interrupt                                 */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(72): warning: declaration shadows a variable in the global scope [-Wshadow]
+   72 |   SVCall_IRQn                 = -5,     /*!< 11 Cortex-M4 SV Call Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(72): note: previous declaration is here
+   72 |   SVCall_IRQn                 = -5,     /*!< 11 Cortex-M4 SV Call Interrupt                                    */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(72): error: redefinition of enumerator 'SVCall_IRQn'
+   72 |   SVCall_IRQn                 = -5,     /*!< 11 Cortex-M4 SV Call Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(72): note: previous definition is here
+   72 |   SVCall_IRQn                 = -5,     /*!< 11 Cortex-M4 SV Call Interrupt                                    */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(73): warning: declaration shadows a variable in the global scope [-Wshadow]
+   73 |   DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M4 Debug Monitor Interrupt                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(73): note: previous declaration is here
+   73 |   DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M4 Debug Monitor Interrupt                              */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(73): error: redefinition of enumerator 'DebugMonitor_IRQn'
+   73 |   DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M4 Debug Monitor Interrupt                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(73): note: previous definition is here
+   73 |   DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M4 Debug Monitor Interrupt                              */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(74): warning: declaration shadows a variable in the global scope [-Wshadow]
+   74 |   PendSV_IRQn                 = -2,     /*!< 14 Cortex-M4 Pend SV Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(74): note: previous declaration is here
+   74 |   PendSV_IRQn                 = -2,     /*!< 14 Cortex-M4 Pend SV Interrupt                                    */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(74): error: redefinition of enumerator 'PendSV_IRQn'
+   74 |   PendSV_IRQn                 = -2,     /*!< 14 Cortex-M4 Pend SV Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(74): note: previous definition is here
+   74 |   PendSV_IRQn                 = -2,     /*!< 14 Cortex-M4 Pend SV Interrupt                                    */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(75): warning: declaration shadows a variable in the global scope [-Wshadow]
+   75 |   SysTick_IRQn                = -1,     /*!< 15 Cortex-M4 System Tick Interrupt                                */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(75): note: previous declaration is here
+   75 |   SysTick_IRQn                = -1,     /*!< 15 Cortex-M4 System Tick Interrupt                                */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(75): error: redefinition of enumerator 'SysTick_IRQn'
+   75 |   SysTick_IRQn                = -1,     /*!< 15 Cortex-M4 System Tick Interrupt                                */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(75): note: previous definition is here
+   75 |   SysTick_IRQn                = -1,     /*!< 15 Cortex-M4 System Tick Interrupt                                */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(77): warning: declaration shadows a variable in the global scope [-Wshadow]
+   77 |   WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                                         */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(77): note: previous declaration is here
+   77 |   WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                                         */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(77): error: redefinition of enumerator 'WWDG_IRQn'
+   77 |   WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                                         */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(77): note: previous definition is here
+   77 |   WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                                         */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(78): warning: declaration shadows a variable in the global scope [-Wshadow]
+   78 |   PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt                         */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(78): note: previous declaration is here
+   78 |   PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt                         */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(78): error: redefinition of enumerator 'PVD_IRQn'
+   78 |   PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt                         */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(78): note: previous definition is here
+   78 |   PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt                         */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(79): warning: declaration shadows a variable in the global scope [-Wshadow]
+   79 |   TAMP_STAMP_IRQn             = 2,      /*!< Tamper and TimeStamp interrupts through the EXTI line             */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(79): note: previous declaration is here
+   79 |   TAMP_STAMP_IRQn             = 2,      /*!< Tamper and TimeStamp interrupts through the EXTI line             */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(79): error: redefinition of enumerator 'TAMP_STAMP_IRQn'
+   79 |   TAMP_STAMP_IRQn             = 2,      /*!< Tamper and TimeStamp interrupts through the EXTI line             */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(79): note: previous definition is here
+   79 |   TAMP_STAMP_IRQn             = 2,      /*!< Tamper and TimeStamp interrupts through the EXTI line             */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(80): warning: declaration shadows a variable in the global scope [-Wshadow]
+   80 |   RTC_WKUP_IRQn               = 3,      /*!< RTC Wakeup interrupt through the EXTI line                        */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(80): note: previous declaration is here
+   80 |   RTC_WKUP_IRQn               = 3,      /*!< RTC Wakeup interrupt through the EXTI line                        */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(80): error: redefinition of enumerator 'RTC_WKUP_IRQn'
+   80 |   RTC_WKUP_IRQn               = 3,      /*!< RTC Wakeup interrupt through the EXTI line                        */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(80): note: previous definition is here
+   80 |   RTC_WKUP_IRQn               = 3,      /*!< RTC Wakeup interrupt through the EXTI line                        */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(81): warning: declaration shadows a variable in the global scope [-Wshadow]
+   81 |   FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                                            */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(81): note: previous declaration is here
+   81 |   FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                                            */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(81): error: redefinition of enumerator 'FLASH_IRQn'
+   81 |   FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                                            */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(81): note: previous definition is here
+   81 |   FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                                            */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(82): warning: declaration shadows a variable in the global scope [-Wshadow]
+   82 |   RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(82): note: previous declaration is here
+   82 |   RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                              */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(82): error: redefinition of enumerator 'RCC_IRQn'
+   82 |   RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(82): note: previous definition is here
+   82 |   RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                              */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(83): warning: declaration shadows a variable in the global scope [-Wshadow]
+   83 |   EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(83): note: previous declaration is here
+   83 |   EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                              */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(83): error: redefinition of enumerator 'EXTI0_IRQn'
+   83 |   EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(83): note: previous definition is here
+   83 |   EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                              */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(84): warning: declaration shadows a variable in the global scope [-Wshadow]
+   84 |   EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(84): note: previous declaration is here
+   84 |   EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                              */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(84): error: redefinition of enumerator 'EXTI1_IRQn'
+   84 |   EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(84): note: previous definition is here
+   84 |   EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                              */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(85): warning: declaration shadows a variable in the global scope [-Wshadow]
+   85 |   EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(85): note: previous declaration is here
+   85 |   EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                              */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(85): error: redefinition of enumerator 'EXTI2_IRQn'
+   85 |   EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(85): note: previous definition is here
+   85 |   EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                              */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(86): warning: declaration shadows a variable in the global scope [-Wshadow]
+   86 |   EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(86): note: previous declaration is here
+   86 |   EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                              */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(86): error: redefinition of enumerator 'EXTI3_IRQn'
+   86 |   EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(86): note: previous definition is here
+   86 |   EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                              */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(87): warning: declaration shadows a variable in the global scope [-Wshadow]
+   87 |   EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(87): note: previous declaration is here
+   87 |   EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                              */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(87): error: redefinition of enumerator 'EXTI4_IRQn'
+   87 |   EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(87): note: previous definition is here
+   87 |   EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                              */
+      |   ^
+library/i2c-lcd.c(20): warning: In file included from...
+library/i2c-lcd.h(20): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(88): warning: declaration shadows a variable in the global scope [-Wshadow]
+   88 |   DMA1_Stream0_IRQn           = 11,     /*!< DMA1 Stream 0 global Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(88): note: previous declaration is here
+   88 |   DMA1_Stream0_IRQn           = 11,     /*!< DMA1 Stream 0 global Interrupt                                    */
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 warnings and 20 errors generated.
+compiling i2c-lcd.c...
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(68): warning: declaration shadows a variable in the global scope [-Wshadow]
+   68 |   NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                                          */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(68): note: previous declaration is here
+   68 |   NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                                          */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(68): error: redefinition of enumerator 'NonMaskableInt_IRQn'
+   68 |   NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                                          */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(68): note: previous definition is here
+   68 |   NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                                          */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(69): warning: declaration shadows a variable in the global scope [-Wshadow]
+   69 |   MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M4 Memory Management Interrupt                           */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(69): note: previous declaration is here
+   69 |   MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M4 Memory Management Interrupt                           */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(69): error: redefinition of enumerator 'MemoryManagement_IRQn'
+   69 |   MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M4 Memory Management Interrupt                           */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(69): note: previous definition is here
+   69 |   MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M4 Memory Management Interrupt                           */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(70): warning: declaration shadows a variable in the global scope [-Wshadow]
+   70 |   BusFault_IRQn               = -11,    /*!< 5 Cortex-M4 Bus Fault Interrupt                                   */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(70): note: previous declaration is here
+   70 |   BusFault_IRQn               = -11,    /*!< 5 Cortex-M4 Bus Fault Interrupt                                   */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(70): error: redefinition of enumerator 'BusFault_IRQn'
+   70 |   BusFault_IRQn               = -11,    /*!< 5 Cortex-M4 Bus Fault Interrupt                                   */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(70): note: previous definition is here
+   70 |   BusFault_IRQn               = -11,    /*!< 5 Cortex-M4 Bus Fault Interrupt                                   */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(71): warning: declaration shadows a variable in the global scope [-Wshadow]
+   71 |   UsageFault_IRQn             = -10,    /*!< 6 Cortex-M4 Usage Fault Interrupt                                 */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(71): note: previous declaration is here
+   71 |   UsageFault_IRQn             = -10,    /*!< 6 Cortex-M4 Usage Fault Interrupt                                 */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(71): error: redefinition of enumerator 'UsageFault_IRQn'
+   71 |   UsageFault_IRQn             = -10,    /*!< 6 Cortex-M4 Usage Fault Interrupt                                 */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(71): note: previous definition is here
+   71 |   UsageFault_IRQn             = -10,    /*!< 6 Cortex-M4 Usage Fault Interrupt                                 */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(72): warning: declaration shadows a variable in the global scope [-Wshadow]
+   72 |   SVCall_IRQn                 = -5,     /*!< 11 Cortex-M4 SV Call Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(72): note: previous declaration is here
+   72 |   SVCall_IRQn                 = -5,     /*!< 11 Cortex-M4 SV Call Interrupt                                    */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(72): error: redefinition of enumerator 'SVCall_IRQn'
+   72 |   SVCall_IRQn                 = -5,     /*!< 11 Cortex-M4 SV Call Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(72): note: previous definition is here
+   72 |   SVCall_IRQn                 = -5,     /*!< 11 Cortex-M4 SV Call Interrupt                                    */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(73): warning: declaration shadows a variable in the global scope [-Wshadow]
+   73 |   DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M4 Debug Monitor Interrupt                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(73): note: previous declaration is here
+   73 |   DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M4 Debug Monitor Interrupt                              */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(73): error: redefinition of enumerator 'DebugMonitor_IRQn'
+   73 |   DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M4 Debug Monitor Interrupt                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(73): note: previous definition is here
+   73 |   DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M4 Debug Monitor Interrupt                              */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(74): warning: declaration shadows a variable in the global scope [-Wshadow]
+   74 |   PendSV_IRQn                 = -2,     /*!< 14 Cortex-M4 Pend SV Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(74): note: previous declaration is here
+   74 |   PendSV_IRQn                 = -2,     /*!< 14 Cortex-M4 Pend SV Interrupt                                    */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(74): error: redefinition of enumerator 'PendSV_IRQn'
+   74 |   PendSV_IRQn                 = -2,     /*!< 14 Cortex-M4 Pend SV Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(74): note: previous definition is here
+   74 |   PendSV_IRQn                 = -2,     /*!< 14 Cortex-M4 Pend SV Interrupt                                    */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(75): warning: declaration shadows a variable in the global scope [-Wshadow]
+   75 |   SysTick_IRQn                = -1,     /*!< 15 Cortex-M4 System Tick Interrupt                                */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(75): note: previous declaration is here
+   75 |   SysTick_IRQn                = -1,     /*!< 15 Cortex-M4 System Tick Interrupt                                */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(75): error: redefinition of enumerator 'SysTick_IRQn'
+   75 |   SysTick_IRQn                = -1,     /*!< 15 Cortex-M4 System Tick Interrupt                                */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(75): note: previous definition is here
+   75 |   SysTick_IRQn                = -1,     /*!< 15 Cortex-M4 System Tick Interrupt                                */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(77): warning: declaration shadows a variable in the global scope [-Wshadow]
+   77 |   WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                                         */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(77): note: previous declaration is here
+   77 |   WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                                         */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(77): error: redefinition of enumerator 'WWDG_IRQn'
+   77 |   WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                                         */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(77): note: previous definition is here
+   77 |   WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                                         */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(78): warning: declaration shadows a variable in the global scope [-Wshadow]
+   78 |   PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt                         */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(78): note: previous declaration is here
+   78 |   PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt                         */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(78): error: redefinition of enumerator 'PVD_IRQn'
+   78 |   PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt                         */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(78): note: previous definition is here
+   78 |   PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt                         */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(79): warning: declaration shadows a variable in the global scope [-Wshadow]
+   79 |   TAMP_STAMP_IRQn             = 2,      /*!< Tamper and TimeStamp interrupts through the EXTI line             */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(79): note: previous declaration is here
+   79 |   TAMP_STAMP_IRQn             = 2,      /*!< Tamper and TimeStamp interrupts through the EXTI line             */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(79): error: redefinition of enumerator 'TAMP_STAMP_IRQn'
+   79 |   TAMP_STAMP_IRQn             = 2,      /*!< Tamper and TimeStamp interrupts through the EXTI line             */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(79): note: previous definition is here
+   79 |   TAMP_STAMP_IRQn             = 2,      /*!< Tamper and TimeStamp interrupts through the EXTI line             */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(80): warning: declaration shadows a variable in the global scope [-Wshadow]
+   80 |   RTC_WKUP_IRQn               = 3,      /*!< RTC Wakeup interrupt through the EXTI line                        */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(80): note: previous declaration is here
+   80 |   RTC_WKUP_IRQn               = 3,      /*!< RTC Wakeup interrupt through the EXTI line                        */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(80): error: redefinition of enumerator 'RTC_WKUP_IRQn'
+   80 |   RTC_WKUP_IRQn               = 3,      /*!< RTC Wakeup interrupt through the EXTI line                        */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(80): note: previous definition is here
+   80 |   RTC_WKUP_IRQn               = 3,      /*!< RTC Wakeup interrupt through the EXTI line                        */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(81): warning: declaration shadows a variable in the global scope [-Wshadow]
+   81 |   FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                                            */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(81): note: previous declaration is here
+   81 |   FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                                            */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(81): error: redefinition of enumerator 'FLASH_IRQn'
+   81 |   FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                                            */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(81): note: previous definition is here
+   81 |   FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                                            */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(82): warning: declaration shadows a variable in the global scope [-Wshadow]
+   82 |   RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(82): note: previous declaration is here
+   82 |   RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                              */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(82): error: redefinition of enumerator 'RCC_IRQn'
+   82 |   RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(82): note: previous definition is here
+   82 |   RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                              */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(83): warning: declaration shadows a variable in the global scope [-Wshadow]
+   83 |   EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(83): note: previous declaration is here
+   83 |   EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                              */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(83): error: redefinition of enumerator 'EXTI0_IRQn'
+   83 |   EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(83): note: previous definition is here
+   83 |   EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                              */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(84): warning: declaration shadows a variable in the global scope [-Wshadow]
+   84 |   EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(84): note: previous declaration is here
+   84 |   EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                              */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(84): error: redefinition of enumerator 'EXTI1_IRQn'
+   84 |   EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(84): note: previous definition is here
+   84 |   EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                              */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(85): warning: declaration shadows a variable in the global scope [-Wshadow]
+   85 |   EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(85): note: previous declaration is here
+   85 |   EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                              */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(85): error: redefinition of enumerator 'EXTI2_IRQn'
+   85 |   EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(85): note: previous definition is here
+   85 |   EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                              */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(86): warning: declaration shadows a variable in the global scope [-Wshadow]
+   86 |   EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(86): note: previous declaration is here
+   86 |   EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                              */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(86): error: redefinition of enumerator 'EXTI3_IRQn'
+   86 |   EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(86): note: previous definition is here
+   86 |   EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                              */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(87): warning: declaration shadows a variable in the global scope [-Wshadow]
+   87 |   EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(87): note: previous declaration is here
+   87 |   EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                              */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(87): error: redefinition of enumerator 'EXTI4_IRQn'
+   87 |   EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(87): note: previous definition is here
+   87 |   EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                              */
+      |   ^
+library/Delay.c(21): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(88): warning: declaration shadows a variable in the global scope [-Wshadow]
+   88 |   DMA1_Stream0_IRQn           = 11,     /*!< DMA1 Stream 0 global Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(88): note: previous declaration is here
+   88 |   DMA1_Stream0_IRQn           = 11,     /*!< DMA1 Stream 0 global Interrupt                                    */
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 warnings and 20 errors generated.
+compiling Delay.c...
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(68): warning: declaration shadows a variable in the global scope [-Wshadow]
+   68 |   NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                                          */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(68): note: previous declaration is here
+   68 |   NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                                          */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(68): error: redefinition of enumerator 'NonMaskableInt_IRQn'
+   68 |   NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                                          */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(68): note: previous definition is here
+   68 |   NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                                          */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(69): warning: declaration shadows a variable in the global scope [-Wshadow]
+   69 |   MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M4 Memory Management Interrupt                           */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(69): note: previous declaration is here
+   69 |   MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M4 Memory Management Interrupt                           */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(69): error: redefinition of enumerator 'MemoryManagement_IRQn'
+   69 |   MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M4 Memory Management Interrupt                           */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(69): note: previous definition is here
+   69 |   MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M4 Memory Management Interrupt                           */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(70): warning: declaration shadows a variable in the global scope [-Wshadow]
+   70 |   BusFault_IRQn               = -11,    /*!< 5 Cortex-M4 Bus Fault Interrupt                                   */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(70): note: previous declaration is here
+   70 |   BusFault_IRQn               = -11,    /*!< 5 Cortex-M4 Bus Fault Interrupt                                   */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(70): error: redefinition of enumerator 'BusFault_IRQn'
+   70 |   BusFault_IRQn               = -11,    /*!< 5 Cortex-M4 Bus Fault Interrupt                                   */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(70): note: previous definition is here
+   70 |   BusFault_IRQn               = -11,    /*!< 5 Cortex-M4 Bus Fault Interrupt                                   */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(71): warning: declaration shadows a variable in the global scope [-Wshadow]
+   71 |   UsageFault_IRQn             = -10,    /*!< 6 Cortex-M4 Usage Fault Interrupt                                 */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(71): note: previous declaration is here
+   71 |   UsageFault_IRQn             = -10,    /*!< 6 Cortex-M4 Usage Fault Interrupt                                 */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(71): error: redefinition of enumerator 'UsageFault_IRQn'
+   71 |   UsageFault_IRQn             = -10,    /*!< 6 Cortex-M4 Usage Fault Interrupt                                 */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(71): note: previous definition is here
+   71 |   UsageFault_IRQn             = -10,    /*!< 6 Cortex-M4 Usage Fault Interrupt                                 */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(72): warning: declaration shadows a variable in the global scope [-Wshadow]
+   72 |   SVCall_IRQn                 = -5,     /*!< 11 Cortex-M4 SV Call Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(72): note: previous declaration is here
+   72 |   SVCall_IRQn                 = -5,     /*!< 11 Cortex-M4 SV Call Interrupt                                    */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(72): error: redefinition of enumerator 'SVCall_IRQn'
+   72 |   SVCall_IRQn                 = -5,     /*!< 11 Cortex-M4 SV Call Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(72): note: previous definition is here
+   72 |   SVCall_IRQn                 = -5,     /*!< 11 Cortex-M4 SV Call Interrupt                                    */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(73): warning: declaration shadows a variable in the global scope [-Wshadow]
+   73 |   DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M4 Debug Monitor Interrupt                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(73): note: previous declaration is here
+   73 |   DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M4 Debug Monitor Interrupt                              */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(73): error: redefinition of enumerator 'DebugMonitor_IRQn'
+   73 |   DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M4 Debug Monitor Interrupt                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(73): note: previous definition is here
+   73 |   DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M4 Debug Monitor Interrupt                              */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(74): warning: declaration shadows a variable in the global scope [-Wshadow]
+   74 |   PendSV_IRQn                 = -2,     /*!< 14 Cortex-M4 Pend SV Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(74): note: previous declaration is here
+   74 |   PendSV_IRQn                 = -2,     /*!< 14 Cortex-M4 Pend SV Interrupt                                    */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(74): error: redefinition of enumerator 'PendSV_IRQn'
+   74 |   PendSV_IRQn                 = -2,     /*!< 14 Cortex-M4 Pend SV Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(74): note: previous definition is here
+   74 |   PendSV_IRQn                 = -2,     /*!< 14 Cortex-M4 Pend SV Interrupt                                    */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(75): warning: declaration shadows a variable in the global scope [-Wshadow]
+   75 |   SysTick_IRQn                = -1,     /*!< 15 Cortex-M4 System Tick Interrupt                                */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(75): note: previous declaration is here
+   75 |   SysTick_IRQn                = -1,     /*!< 15 Cortex-M4 System Tick Interrupt                                */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(75): error: redefinition of enumerator 'SysTick_IRQn'
+   75 |   SysTick_IRQn                = -1,     /*!< 15 Cortex-M4 System Tick Interrupt                                */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(75): note: previous definition is here
+   75 |   SysTick_IRQn                = -1,     /*!< 15 Cortex-M4 System Tick Interrupt                                */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(77): warning: declaration shadows a variable in the global scope [-Wshadow]
+   77 |   WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                                         */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(77): note: previous declaration is here
+   77 |   WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                                         */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(77): error: redefinition of enumerator 'WWDG_IRQn'
+   77 |   WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                                         */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(77): note: previous definition is here
+   77 |   WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                                         */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(78): warning: declaration shadows a variable in the global scope [-Wshadow]
+   78 |   PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt                         */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(78): note: previous declaration is here
+   78 |   PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt                         */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(78): error: redefinition of enumerator 'PVD_IRQn'
+   78 |   PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt                         */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(78): note: previous definition is here
+   78 |   PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt                         */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(79): warning: declaration shadows a variable in the global scope [-Wshadow]
+   79 |   TAMP_STAMP_IRQn             = 2,      /*!< Tamper and TimeStamp interrupts through the EXTI line             */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(79): note: previous declaration is here
+   79 |   TAMP_STAMP_IRQn             = 2,      /*!< Tamper and TimeStamp interrupts through the EXTI line             */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(79): error: redefinition of enumerator 'TAMP_STAMP_IRQn'
+   79 |   TAMP_STAMP_IRQn             = 2,      /*!< Tamper and TimeStamp interrupts through the EXTI line             */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(79): note: previous definition is here
+   79 |   TAMP_STAMP_IRQn             = 2,      /*!< Tamper and TimeStamp interrupts through the EXTI line             */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(80): warning: declaration shadows a variable in the global scope [-Wshadow]
+   80 |   RTC_WKUP_IRQn               = 3,      /*!< RTC Wakeup interrupt through the EXTI line                        */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(80): note: previous declaration is here
+   80 |   RTC_WKUP_IRQn               = 3,      /*!< RTC Wakeup interrupt through the EXTI line                        */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(80): error: redefinition of enumerator 'RTC_WKUP_IRQn'
+   80 |   RTC_WKUP_IRQn               = 3,      /*!< RTC Wakeup interrupt through the EXTI line                        */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(80): note: previous definition is here
+   80 |   RTC_WKUP_IRQn               = 3,      /*!< RTC Wakeup interrupt through the EXTI line                        */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(81): warning: declaration shadows a variable in the global scope [-Wshadow]
+   81 |   FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                                            */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(81): note: previous declaration is here
+   81 |   FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                                            */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(81): error: redefinition of enumerator 'FLASH_IRQn'
+   81 |   FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                                            */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(81): note: previous definition is here
+   81 |   FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                                            */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(82): warning: declaration shadows a variable in the global scope [-Wshadow]
+   82 |   RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(82): note: previous declaration is here
+   82 |   RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                              */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(82): error: redefinition of enumerator 'RCC_IRQn'
+   82 |   RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(82): note: previous definition is here
+   82 |   RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                              */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(83): warning: declaration shadows a variable in the global scope [-Wshadow]
+   83 |   EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(83): note: previous declaration is here
+   83 |   EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                              */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(83): error: redefinition of enumerator 'EXTI0_IRQn'
+   83 |   EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(83): note: previous definition is here
+   83 |   EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                              */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(84): warning: declaration shadows a variable in the global scope [-Wshadow]
+   84 |   EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(84): note: previous declaration is here
+   84 |   EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                              */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(84): error: redefinition of enumerator 'EXTI1_IRQn'
+   84 |   EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(84): note: previous definition is here
+   84 |   EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                              */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(85): warning: declaration shadows a variable in the global scope [-Wshadow]
+   85 |   EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(85): note: previous declaration is here
+   85 |   EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                              */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(85): error: redefinition of enumerator 'EXTI2_IRQn'
+   85 |   EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(85): note: previous definition is here
+   85 |   EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                              */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(86): warning: declaration shadows a variable in the global scope [-Wshadow]
+   86 |   EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(86): note: previous declaration is here
+   86 |   EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                              */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(86): error: redefinition of enumerator 'EXTI3_IRQn'
+   86 |   EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(86): note: previous definition is here
+   86 |   EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                              */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(87): warning: declaration shadows a variable in the global scope [-Wshadow]
+   87 |   EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(87): note: previous declaration is here
+   87 |   EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                              */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(87): error: redefinition of enumerator 'EXTI4_IRQn'
+   87 |   EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(87): note: previous definition is here
+   87 |   EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                              */
+      |   ^
+library/I2C.c(23): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(88): warning: declaration shadows a variable in the global scope [-Wshadow]
+   88 |   DMA1_Stream0_IRQn           = 11,     /*!< DMA1 Stream 0 global Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(88): note: previous declaration is here
+   88 |   DMA1_Stream0_IRQn           = 11,     /*!< DMA1 Stream 0 global Interrupt                                    */
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 warnings and 20 errors generated.
+compiling I2C.c...
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(68): warning: declaration shadows a variable in the global scope [-Wshadow]
+   68 |   NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                                          */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(68): note: previous declaration is here
+   68 |   NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                                          */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(68): error: redefinition of enumerator 'NonMaskableInt_IRQn'
+   68 |   NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                                          */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(68): note: previous definition is here
+   68 |   NonMaskableInt_IRQn         = -14,    /*!< 2 Non Maskable Interrupt                                          */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(69): warning: declaration shadows a variable in the global scope [-Wshadow]
+   69 |   MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M4 Memory Management Interrupt                           */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(69): note: previous declaration is here
+   69 |   MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M4 Memory Management Interrupt                           */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(69): error: redefinition of enumerator 'MemoryManagement_IRQn'
+   69 |   MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M4 Memory Management Interrupt                           */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(69): note: previous definition is here
+   69 |   MemoryManagement_IRQn       = -12,    /*!< 4 Cortex-M4 Memory Management Interrupt                           */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(70): warning: declaration shadows a variable in the global scope [-Wshadow]
+   70 |   BusFault_IRQn               = -11,    /*!< 5 Cortex-M4 Bus Fault Interrupt                                   */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(70): note: previous declaration is here
+   70 |   BusFault_IRQn               = -11,    /*!< 5 Cortex-M4 Bus Fault Interrupt                                   */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(70): error: redefinition of enumerator 'BusFault_IRQn'
+   70 |   BusFault_IRQn               = -11,    /*!< 5 Cortex-M4 Bus Fault Interrupt                                   */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(70): note: previous definition is here
+   70 |   BusFault_IRQn               = -11,    /*!< 5 Cortex-M4 Bus Fault Interrupt                                   */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(71): warning: declaration shadows a variable in the global scope [-Wshadow]
+   71 |   UsageFault_IRQn             = -10,    /*!< 6 Cortex-M4 Usage Fault Interrupt                                 */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(71): note: previous declaration is here
+   71 |   UsageFault_IRQn             = -10,    /*!< 6 Cortex-M4 Usage Fault Interrupt                                 */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(71): error: redefinition of enumerator 'UsageFault_IRQn'
+   71 |   UsageFault_IRQn             = -10,    /*!< 6 Cortex-M4 Usage Fault Interrupt                                 */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(71): note: previous definition is here
+   71 |   UsageFault_IRQn             = -10,    /*!< 6 Cortex-M4 Usage Fault Interrupt                                 */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(72): warning: declaration shadows a variable in the global scope [-Wshadow]
+   72 |   SVCall_IRQn                 = -5,     /*!< 11 Cortex-M4 SV Call Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(72): note: previous declaration is here
+   72 |   SVCall_IRQn                 = -5,     /*!< 11 Cortex-M4 SV Call Interrupt                                    */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(72): error: redefinition of enumerator 'SVCall_IRQn'
+   72 |   SVCall_IRQn                 = -5,     /*!< 11 Cortex-M4 SV Call Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(72): note: previous definition is here
+   72 |   SVCall_IRQn                 = -5,     /*!< 11 Cortex-M4 SV Call Interrupt                                    */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(73): warning: declaration shadows a variable in the global scope [-Wshadow]
+   73 |   DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M4 Debug Monitor Interrupt                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(73): note: previous declaration is here
+   73 |   DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M4 Debug Monitor Interrupt                              */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(73): error: redefinition of enumerator 'DebugMonitor_IRQn'
+   73 |   DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M4 Debug Monitor Interrupt                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(73): note: previous definition is here
+   73 |   DebugMonitor_IRQn           = -4,     /*!< 12 Cortex-M4 Debug Monitor Interrupt                              */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(74): warning: declaration shadows a variable in the global scope [-Wshadow]
+   74 |   PendSV_IRQn                 = -2,     /*!< 14 Cortex-M4 Pend SV Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(74): note: previous declaration is here
+   74 |   PendSV_IRQn                 = -2,     /*!< 14 Cortex-M4 Pend SV Interrupt                                    */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(74): error: redefinition of enumerator 'PendSV_IRQn'
+   74 |   PendSV_IRQn                 = -2,     /*!< 14 Cortex-M4 Pend SV Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(74): note: previous definition is here
+   74 |   PendSV_IRQn                 = -2,     /*!< 14 Cortex-M4 Pend SV Interrupt                                    */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(75): warning: declaration shadows a variable in the global scope [-Wshadow]
+   75 |   SysTick_IRQn                = -1,     /*!< 15 Cortex-M4 System Tick Interrupt                                */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(75): note: previous declaration is here
+   75 |   SysTick_IRQn                = -1,     /*!< 15 Cortex-M4 System Tick Interrupt                                */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(75): error: redefinition of enumerator 'SysTick_IRQn'
+   75 |   SysTick_IRQn                = -1,     /*!< 15 Cortex-M4 System Tick Interrupt                                */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(75): note: previous definition is here
+   75 |   SysTick_IRQn                = -1,     /*!< 15 Cortex-M4 System Tick Interrupt                                */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(77): warning: declaration shadows a variable in the global scope [-Wshadow]
+   77 |   WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                                         */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(77): note: previous declaration is here
+   77 |   WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                                         */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(77): error: redefinition of enumerator 'WWDG_IRQn'
+   77 |   WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                                         */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(77): note: previous definition is here
+   77 |   WWDG_IRQn                   = 0,      /*!< Window WatchDog Interrupt                                         */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(78): warning: declaration shadows a variable in the global scope [-Wshadow]
+   78 |   PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt                         */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(78): note: previous declaration is here
+   78 |   PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt                         */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(78): error: redefinition of enumerator 'PVD_IRQn'
+   78 |   PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt                         */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(78): note: previous definition is here
+   78 |   PVD_IRQn                    = 1,      /*!< PVD through EXTI Line detection Interrupt                         */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(79): warning: declaration shadows a variable in the global scope [-Wshadow]
+   79 |   TAMP_STAMP_IRQn             = 2,      /*!< Tamper and TimeStamp interrupts through the EXTI line             */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(79): note: previous declaration is here
+   79 |   TAMP_STAMP_IRQn             = 2,      /*!< Tamper and TimeStamp interrupts through the EXTI line             */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(79): error: redefinition of enumerator 'TAMP_STAMP_IRQn'
+   79 |   TAMP_STAMP_IRQn             = 2,      /*!< Tamper and TimeStamp interrupts through the EXTI line             */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(79): note: previous definition is here
+   79 |   TAMP_STAMP_IRQn             = 2,      /*!< Tamper and TimeStamp interrupts through the EXTI line             */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(80): warning: declaration shadows a variable in the global scope [-Wshadow]
+   80 |   RTC_WKUP_IRQn               = 3,      /*!< RTC Wakeup interrupt through the EXTI line                        */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(80): note: previous declaration is here
+   80 |   RTC_WKUP_IRQn               = 3,      /*!< RTC Wakeup interrupt through the EXTI line                        */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(80): error: redefinition of enumerator 'RTC_WKUP_IRQn'
+   80 |   RTC_WKUP_IRQn               = 3,      /*!< RTC Wakeup interrupt through the EXTI line                        */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(80): note: previous definition is here
+   80 |   RTC_WKUP_IRQn               = 3,      /*!< RTC Wakeup interrupt through the EXTI line                        */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(81): warning: declaration shadows a variable in the global scope [-Wshadow]
+   81 |   FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                                            */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(81): note: previous declaration is here
+   81 |   FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                                            */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(81): error: redefinition of enumerator 'FLASH_IRQn'
+   81 |   FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                                            */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(81): note: previous definition is here
+   81 |   FLASH_IRQn                  = 4,      /*!< FLASH global Interrupt                                            */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(82): warning: declaration shadows a variable in the global scope [-Wshadow]
+   82 |   RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(82): note: previous declaration is here
+   82 |   RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                              */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(82): error: redefinition of enumerator 'RCC_IRQn'
+   82 |   RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(82): note: previous definition is here
+   82 |   RCC_IRQn                    = 5,      /*!< RCC global Interrupt                                              */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(83): warning: declaration shadows a variable in the global scope [-Wshadow]
+   83 |   EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(83): note: previous declaration is here
+   83 |   EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                              */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(83): error: redefinition of enumerator 'EXTI0_IRQn'
+   83 |   EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(83): note: previous definition is here
+   83 |   EXTI0_IRQn                  = 6,      /*!< EXTI Line0 Interrupt                                              */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(84): warning: declaration shadows a variable in the global scope [-Wshadow]
+   84 |   EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(84): note: previous declaration is here
+   84 |   EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                              */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(84): error: redefinition of enumerator 'EXTI1_IRQn'
+   84 |   EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(84): note: previous definition is here
+   84 |   EXTI1_IRQn                  = 7,      /*!< EXTI Line1 Interrupt                                              */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(85): warning: declaration shadows a variable in the global scope [-Wshadow]
+   85 |   EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(85): note: previous declaration is here
+   85 |   EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                              */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(85): error: redefinition of enumerator 'EXTI2_IRQn'
+   85 |   EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(85): note: previous definition is here
+   85 |   EXTI2_IRQn                  = 8,      /*!< EXTI Line2 Interrupt                                              */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(86): warning: declaration shadows a variable in the global scope [-Wshadow]
+   86 |   EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(86): note: previous declaration is here
+   86 |   EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                              */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(86): error: redefinition of enumerator 'EXTI3_IRQn'
+   86 |   EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(86): note: previous definition is here
+   86 |   EXTI3_IRQn                  = 9,      /*!< EXTI Line3 Interrupt                                              */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(87): warning: declaration shadows a variable in the global scope [-Wshadow]
+   87 |   EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(87): note: previous declaration is here
+   87 |   EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                              */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(87): error: redefinition of enumerator 'EXTI4_IRQn'
+   87 |   EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                              */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(87): note: previous definition is here
+   87 |   EXTI4_IRQn                  = 10,     /*!< EXTI Line4 Interrupt                                              */
+      |   ^
+library/RccConfig.c(41): warning: In file included from...
+library/RccConfig.h(20): warning: In file included from...
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include\stm32f446xx.h(88): warning: declaration shadows a variable in the global scope [-Wshadow]
+   88 |   DMA1_Stream0_IRQn           = 11,     /*!< DMA1 Stream 0 global Interrupt                                    */
+      |   ^
+C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h(88): note: previous declaration is here
+   88 |   DMA1_Stream0_IRQn           = 11,     /*!< DMA1 Stream 0 global Interrupt                                    */
+      |   ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 warnings and 20 errors generated.
+compiling RccConfig.c...
+".\Objects\12.6_I2C1_PCF8574" - 95 Error(s), 100 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.0.0.pack
+                ARM::CMSIS@6.0.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.0.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil::STM32F4xx_DFP@2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_STM32F4
+  C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/ARM/CMSIS/6.0.0/CMSIS/Core/Include
+  C:/Users/Rajib Hasan/AppData/Local/Arm/Packs/Keil/STM32F4xx_DFP/2.17.1/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.0.0
+
+   * Component: Keil::Device:Startup@2.6.3
+      Source file:   MDK/Device/Source/ARM/STM32F401xx_OPT.s
+      Include file:  Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/arm/startup_stm32f401xc.s
+      Source file:   MDK/Device/Source/ARM/STM32F4xx_OTP.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+Target not created.
+Build Time Elapsed:  00:00:06
+</pre>
+</body>
+</html>

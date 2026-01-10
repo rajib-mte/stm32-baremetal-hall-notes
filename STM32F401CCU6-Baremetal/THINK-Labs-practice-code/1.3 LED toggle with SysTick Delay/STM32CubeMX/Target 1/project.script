@@ -1,0 +1,5 @@
+load STM32F401CCUx
+project name STM32CubeMX
+project toolchain "MDK-ARM V5"
+project path "E:\STM32\STM32 Black Pill-STM32F401CCU6\Code\1.0 STM32F4xx UCCUX code\1.3 LED toggle with SysTick Delay\STM32CubeMX\Target 1"
+SetCopyLibrary "copy only"

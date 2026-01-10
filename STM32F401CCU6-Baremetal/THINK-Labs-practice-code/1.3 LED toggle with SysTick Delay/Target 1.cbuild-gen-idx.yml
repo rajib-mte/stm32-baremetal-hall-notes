@@ -1,0 +1,13 @@
+build-gen-idx:
+  generated-by: uVision version 5.40.0.0
+  generators:
+    - board: ""
+      device: STM32F401CCUx
+      id: CubeMX
+      output: E:/STM32/STM32 Black Pill-STM32F401CCU6/Code/1.0 STM32F4xx UCCUX code/1.3 LED toggle with SysTick Delay/STM32CubeMX/Target 1/
+      project-type: single-core
+      cbuild-gens:
+        - cbuild-gen: E:/STM32/STM32 Black Pill-STM32F401CCU6/Code/1.0 STM32F4xx UCCUX code/1.3 LED toggle with SysTick Delay/1.3 LED toggle with SysTick Delay.Target 1.cbuild-gen.yml
+          configuration: .Target 1
+          name: E:/STM32/STM32 Black Pill-STM32F401CCU6/Code/1.0 STM32F4xx UCCUX code/1.3 LED toggle with SysTick Delay/STM32CubeMX/Target 1/1.3 LED toggle with SysTick Delay.cgen.yml
+          project: 1.3 LED toggle with SysTick Delay

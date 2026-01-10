@@ -1,0 +1,3 @@
+1711091183777	Move 'i2c-lcd2.c' to 'Src'
+1711091201446	Rename resource 'i2c-lcd2.c'
+1711091242273	Move 'i2c-lcd.h' to 'Inc'

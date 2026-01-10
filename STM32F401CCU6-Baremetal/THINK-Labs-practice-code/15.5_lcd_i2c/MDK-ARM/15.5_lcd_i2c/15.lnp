@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"15.5_lcd_i2c\startup_stm32f401xc.o"
+"15.5_lcd_i2c\main.o"
+"15.5_lcd_i2c\stm32f4xx_it.o"
+"15.5_lcd_i2c\stm32f4xx_hal_msp.o"
+"15.5_lcd_i2c\stm32f4xx_hal_i2c.o"
+"15.5_lcd_i2c\stm32f4xx_hal_i2c_ex.o"
+"15.5_lcd_i2c\stm32f4xx_hal_rcc.o"
+"15.5_lcd_i2c\stm32f4xx_hal_rcc_ex.o"
+"15.5_lcd_i2c\stm32f4xx_hal_flash.o"
+"15.5_lcd_i2c\stm32f4xx_hal_flash_ex.o"
+"15.5_lcd_i2c\stm32f4xx_hal_flash_ramfunc.o"
+"15.5_lcd_i2c\stm32f4xx_hal_gpio.o"
+"15.5_lcd_i2c\stm32f4xx_hal_dma_ex.o"
+"15.5_lcd_i2c\stm32f4xx_hal_dma.o"
+"15.5_lcd_i2c\stm32f4xx_hal_pwr.o"
+"15.5_lcd_i2c\stm32f4xx_hal_pwr_ex.o"
+"15.5_lcd_i2c\stm32f4xx_hal_cortex.o"
+"15.5_lcd_i2c\stm32f4xx_hal.o"
+"15.5_lcd_i2c\stm32f4xx_hal_exti.o"
+"15.5_lcd_i2c\stm32f4xx_hal_tim.o"
+"15.5_lcd_i2c\stm32f4xx_hal_tim_ex.o"
+"15.5_lcd_i2c\system_stm32f4xx.o"
+"15.5_lcd_i2c\i2c-lcd.o"
+--strict --scatter "15.5_lcd_i2c\15.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "15.map" -o 15.5_lcd_i2c\15.5_lcd_i2c

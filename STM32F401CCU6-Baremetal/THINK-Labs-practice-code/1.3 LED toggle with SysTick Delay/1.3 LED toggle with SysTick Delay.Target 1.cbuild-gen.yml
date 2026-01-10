@@ -1,0 +1,10 @@
+build-gen:
+  board: ""
+  compiler: AC6
+  device: STM32F401CCUx
+  generated-by: uVision version 5.40.0.0
+  processor:
+    core: Cortex-M4
+    dsp: off
+    endian: little
+    fpu: sp

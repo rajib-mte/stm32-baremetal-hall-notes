@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"13.0_ultrasonic_sensor_hc-sr04_interface\startup_stm32f401xc.o"
+"13.0_ultrasonic_sensor_hc-sr04_interface\main.o"
+"13.0_ultrasonic_sensor_hc-sr04_interface\stm32f4xx_it.o"
+"13.0_ultrasonic_sensor_hc-sr04_interface\stm32f4xx_hal_msp.o"
+"13.0_ultrasonic_sensor_hc-sr04_interface\stm32f4xx_hal_tim.o"
+"13.0_ultrasonic_sensor_hc-sr04_interface\stm32f4xx_hal_tim_ex.o"
+"13.0_ultrasonic_sensor_hc-sr04_interface\stm32f4xx_hal_rcc.o"
+"13.0_ultrasonic_sensor_hc-sr04_interface\stm32f4xx_hal_rcc_ex.o"
+"13.0_ultrasonic_sensor_hc-sr04_interface\stm32f4xx_hal_flash.o"
+"13.0_ultrasonic_sensor_hc-sr04_interface\stm32f4xx_hal_flash_ex.o"
+"13.0_ultrasonic_sensor_hc-sr04_interface\stm32f4xx_hal_flash_ramfunc.o"
+"13.0_ultrasonic_sensor_hc-sr04_interface\stm32f4xx_hal_gpio.o"
+"13.0_ultrasonic_sensor_hc-sr04_interface\stm32f4xx_hal_dma_ex.o"
+"13.0_ultrasonic_sensor_hc-sr04_interface\stm32f4xx_hal_dma.o"
+"13.0_ultrasonic_sensor_hc-sr04_interface\stm32f4xx_hal_pwr.o"
+"13.0_ultrasonic_sensor_hc-sr04_interface\stm32f4xx_hal_pwr_ex.o"
+"13.0_ultrasonic_sensor_hc-sr04_interface\stm32f4xx_hal_cortex.o"
+"13.0_ultrasonic_sensor_hc-sr04_interface\stm32f4xx_hal.o"
+"13.0_ultrasonic_sensor_hc-sr04_interface\stm32f4xx_hal_exti.o"
+"13.0_ultrasonic_sensor_hc-sr04_interface\system_stm32f4xx.o"
+--strict --scatter "13.0_Ultrasonic_sensor_HC-SR04_interface\13.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "13.map" -o 13.0_Ultrasonic_sensor_HC-SR04_interface\13.0_Ultrasonic_sensor_HC-SR04_interface
