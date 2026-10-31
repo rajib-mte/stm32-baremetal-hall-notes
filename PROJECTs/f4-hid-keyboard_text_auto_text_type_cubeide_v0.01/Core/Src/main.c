@@ -98,12 +98,14 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  HAL_Delay(1000);
   while (1)
   {
     /* USER CODE END WHILE */
 
 
 	/* USER CODE BEGIN 3 */
+
 	KeyBoardPrint(msg_buff, strlen(msg_buff));
 	HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
 	HAL_Delay(100);

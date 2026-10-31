@@ -84,6 +84,6 @@ void KeyBoardPrint(char *data, uint16_t length)
             );
         }
 
-        HAL_Delay(1000);
+        HAL_Delay(100);
     }
 }

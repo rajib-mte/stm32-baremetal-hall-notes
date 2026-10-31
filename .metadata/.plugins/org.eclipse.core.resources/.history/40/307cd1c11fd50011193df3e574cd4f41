@@ -1,0 +1,89 @@
+
+#include "usbd_hid.h"
+#include "usb_device.h"
+#include "keyBoard.h"
+
+extern USBD_HandleTypeDef hUsbDeviceFS;
+
+typedef struct
+{
+    uint8_t MODIFIER;
+    uint8_t RESERVED;
+    uint8_t KEYCODE1;
+    uint8_t KEYCODE2;
+    uint8_t KEYCODE3;
+    uint8_t KEYCODE4;
+    uint8_t KEYCODE5;
+    uint8_t KEYCODE6;
+
+} subKeyBoard;
+
+subKeyBoard keyBoardHIDsub = {0};
+
+void KeyBoardPrint(char *data, uint16_t length)
+{
+    for (uint16_t count = 0; count < length; count++)
+    {
+        uint8_t keycode = 0;
+        uint8_t modifier = 0;
+
+        // Uppercase letters (A-Z)
+        if (data[count] >= 'A' && data[count] <= 'Z')
+        {
+            modifier = 0x02;
+            keycode = data[count] - 0x3D;
+        }
+
+        // Lowercase letters (a-z)
+        else if (data[count] >= 'a' && data[count] <= 'z')
+        {
+            keycode = data[count] - 0x5D;
+        }
+
+        // Space
+        else if (data[count] == ' ')
+        {
+            keycode = 0x2C;
+        }
+
+        // Enter / Newline
+        else if (data[count] == '\n')
+        {
+            keycode = 0x28;
+        }
+
+        // Skip unsupported characters
+        else
+        {
+            continue;
+        }
+
+        // Prepare HID keyboard report
+        keyBoardHIDsub.MODIFIER = modifier;
+        keyBoardHIDsub.KEYCODE1 = keycode;
+
+        // Send key press
+        if (hUsbDeviceFS.dev_state == USBD_STATE_CONFIGURED)
+        {
+            USBD_HID_SendReport(
+                &hUsbDeviceFS,
+                (uint8_t *)&keyBoardHIDsub,
+                sizeof(keyBoardHIDsub)
+            );
+
+            HAL_Delay(15);
+
+            // Release key
+            keyBoardHIDsub.MODIFIER = 0;
+            keyBoardHIDsub.KEYCODE1 = 0;
+
+            USBD_HID_SendReport(
+                &hUsbDeviceFS,
+                (uint8_t *)&keyBoardHIDsub,
+                sizeof(keyBoardHIDsub)
+            );
+        }
+
+        HAL_Delay(30);
+    }
+}

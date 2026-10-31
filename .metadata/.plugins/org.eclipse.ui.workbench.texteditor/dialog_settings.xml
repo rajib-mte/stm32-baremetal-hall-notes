@@ -3,6 +3,7 @@
 	<item key="hasShownOverlayPopupBefore" value="true"/>
 	<item key="replaceBarOpen" value="false"/>
 	<list key="searchhistory">
+		<item value="STMicroelectronics"/>
 		<item value="USBD_PRODUCT_STRING "/>
 		<item value="USBD_PRODUCT_STRING"/>
 		<item value="USBD_HID_ProductStrDescriptor"/>

@@ -18,10 +18,11 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "usb_device.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "usbd_hid.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -42,13 +43,57 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+int cnt = 0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 /* USER CODE BEGIN PFP */
+extern USBD_HandleTypeDef hUsbDeviceFS;
+
+
+typedef struct{
+	uint8_t MODIFIER;
+	uint8_t RESERVED;
+	uint8_t KEYCODE1;
+	uint8_t KEYCODE2;
+	uint8_t KEYCODE3;
+	uint8_t KEYCODE4;
+	uint8_t KEYCODE5;
+	uint8_t KEYCODE6;
+
+}keyBoardReportDes;
+
+keyBoardReportDes HIDkeyBoard = {0, 0, 0, 0, 0, 0, 0, 0};
+
+
+
+void lefButton(){
+	HIDkeyBoard.MODIFIER = 0x00;
+	HIDkeyBoard.KEYCODE1 = 0x2D;
+	USBD_HID_SendReport(&hUsbDeviceFS,(uint8_t *)&HIDkeyBoard,sizeof(HIDkeyBoard));
+	HAL_Delay(100);
+	HIDkeyBoard.MODIFIER = 0x00;
+	HIDkeyBoard.KEYCODE1 = 0x00;
+	USBD_HID_SendReport(&hUsbDeviceFS,(uint8_t *)&HIDkeyBoard,sizeof(HIDkeyBoard));
+	HAL_Delay(100);
+}
+
+void rightButton(){
+	HIDkeyBoard.MODIFIER = 0x02;
+	HIDkeyBoard.KEYCODE1 = 0x2E;
+	USBD_HID_SendReport(&hUsbDeviceFS,(uint8_t *)&HIDkeyBoard,sizeof(HIDkeyBoard));
+	HAL_Delay(100);
+	HIDkeyBoard.MODIFIER = 0x00;
+	HIDkeyBoard.KEYCODE1 = 0x00;
+	USBD_HID_SendReport(&hUsbDeviceFS,(uint8_t *)&HIDkeyBoard,sizeof(HIDkeyBoard));
+	HAL_Delay(100);
+}
+
+void fireButton(){
+
+}
 
 /* USER CODE END PFP */
 
@@ -86,6 +131,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_USB_DEVICE_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -94,9 +140,16 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
+
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  rightButton();
+	  HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
+	  cnt++;
+	  HAL_Delay(100);
   }
   /* USER CODE END 3 */
 }
@@ -110,16 +163,22 @@ void SystemClock_Config(void)
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
 
+  /** Configure the main internal regulator output voltage
+  */
+  __HAL_RCC_PWR_CLK_ENABLE();
+  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE2);
+
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
   RCC_OscInitStruct.HSEState = RCC_HSE_ON;
-  RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;
-  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
   RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;
+  RCC_OscInitStruct.PLL.PLLM = 25;
+  RCC_OscInitStruct.PLL.PLLN = 336;
+  RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV4;
+  RCC_OscInitStruct.PLL.PLLQ = 7;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -154,7 +213,7 @@ static void MX_GPIO_Init(void)
 
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOC_CLK_ENABLE();
-  __HAL_RCC_GPIOD_CLK_ENABLE();
+  __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */

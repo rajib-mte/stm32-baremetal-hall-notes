@@ -250,7 +250,7 @@ __ALIGN_BEGIN static uint8_t HID_MOUSE_ReportDesc[HID_MOUSE_REPORT_DESC_SIZE] __
 		0x19, 0x00,                    //   USAGE_MINIMUM (Reserved (no event indicated))
 		0x29, 0x65,                    //   USAGE_MAXIMUM (Keyboard Application)
 		0x81, 0x00,                    //   INPUT (Data,Ary,Abs)
-		0xc0                           // END_COLLECTION                         */
+		0xc0                           // END_COLLECTION
 };
 
 static uint8_t HIDInEpAdd = HID_EPIN_ADDR;
