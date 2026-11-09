@@ -21,7 +21,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "dht11.h"
+#include <stdio.h>
+DHT11_Data_t dht11;
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -46,6 +48,11 @@ TIM_HandleTypeDef htim2;
 /* USER CODE BEGIN PV */
 int timer_test = 0;
 int cnt = 0;
+volatile uint8_t sensor_status = 0;
+volatile uint8_t humidity_value = 0;
+volatile uint8_t temperature_value = 0;
+
+char uart_buffer[100];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -58,7 +65,12 @@ static void MX_TIM2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+static void DHT11_Delay_us(uint32_t us)
+{
+    uint32_t start = __HAL_TIM_GET_COUNTER(&htim2);
 
+    while ((uint32_t)(__HAL_TIM_GET_COUNTER(&htim2) - start) < us);
+}
 /* USER CODE END 0 */
 
 /**
@@ -100,6 +112,15 @@ int main(void)
   while (1)
   {
 	  timer_test = __HAL_TIM_GET_COUNTER(&htim2);
+	  sensor_status = DHT11_ReadData(&dht11);
+
+	          if (sensor_status == 1)
+	          {
+	              humidity_value = dht11.humidity;
+	              temperature_value = dht11.temperature;
+
+	          }
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
